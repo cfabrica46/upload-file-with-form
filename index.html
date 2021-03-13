@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Upload</title>
+        <meta lang="en">
+    </head>
+    <body>
+        <form method="POST" action="http://localhost:8080" enctype="multipart/form-data">
+            <input type="file" name="uploadfile">
+            <input type="hidden" name="token" value="{{.}}">
+            <input type="submit" value="Upload">
+        </form>
+    </body>
+</html>
